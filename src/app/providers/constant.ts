@@ -1,0 +1,1 @@
+export let SERVERURL = "https://tresangulosfundacion.org";

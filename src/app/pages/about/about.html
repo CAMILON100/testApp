@@ -1,0 +1,126 @@
+<ion-content>
+    <ion-header class="ion-no-border">
+        <ion-toolbar>
+            <ion-title>Fitafter50</ion-title>
+            <ion-buttons slot="start">
+                <ion-menu-button></ion-menu-button>
+            </ion-buttons>
+            <ion-buttons slot="end">
+                <ion-button (click)="presentPopover($event)">
+                    <ion-icon slot="icon-only" ios="ellipsis-horizontal" md="ellipsis-vertical"></ion-icon>
+                </ion-button>
+            </ion-buttons>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-grid style="margin-top:50px; height: calc(100% - 50px);">
+        <ion-row style="height: 100%;">
+            <ion-col size="2" class="scrollbar" id="style-1" scrollY="true" style="background-color: #333333;overflow: auto; height: calc(100vh - 120px);">
+
+
+                <div class="force-overflow">
+                    <ion-grid>
+                        <ion-row *ngFor="let img of images">
+                            <ion-col col-6>
+                                <img src='{{img}}' />
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+
+
+                </div>
+
+
+            </ion-col>
+            <ion-col size="8" style="height: calc(100vh - 120px);">
+                <div id="video-chat-window">
+
+                </div>
+            </ion-col>
+            <ion-col size="2" style="background-color: #333333; height: calc(100vh - 120px);">
+                <div>
+                    <ion-card>
+                        <ion-card-header>
+                            <ion-card-title style="text-align:center;  font-size: 24px;">Andres</ion-card-title>
+                        </ion-card-header>
+                        <ion-card-content>
+                            <ion-row style="text-align:center; font-size: 18px;">
+                                <ion-col col-2></ion-col>
+                                <ion-col col-8>Aerobics</ion-col>
+                                <ion-col col-2></ion-col>
+                            </ion-row>
+
+                            <ion-row style="text-align:center; font-size: 24px;">
+                                <ion-col col-2>
+                                    <ion-button expand="block" class="your-style-class">
+                                        <ion-icon name="settings-outline"></ion-icon>
+                                    </ion-button>
+                                </ion-col>
+                                <ion-col col-8>
+                                    <p style=" height: 90%;color: white; text-align:center; font-size: 24px; background-color: #2cb32c;"> 10:00 </p>
+                                </ion-col>
+                                <ion-col col-2></ion-col>
+                            </ion-row>
+
+                        </ion-card-content>
+                        <ion-grid>
+                            <ion-row>
+                                <ion-col col-4>
+                                    <ion-button expand="block">
+                                        <ion-icon style="text-align:center;  font-size: 24px;" name="pause-outline"></ion-icon>
+                                    </ion-button>
+                                </ion-col>
+                                <ion-col col-4>
+                                    <ion-button expand="block">
+                                        <ion-icon style="text-align:center;  font-size: 24px;" name="checkmark-outline"></ion-icon>
+                                    </ion-button>
+                                </ion-col>
+                                <ion-col col-4>
+                                    <ion-button expand="block">
+                                        <ion-icon style="text-align:center;  font-size: 24px;" name="play-outline"></ion-icon>
+                                    </ion-button>
+                                </ion-col>
+                            </ion-row>
+                        </ion-grid>
+                    </ion-card>
+
+                    <ion-card>
+                        <ion-card-header>
+                            <ion-card-title style="text-align:center;  font-size: 24px;">430 Calories</ion-card-title>
+                        </ion-card-header>
+                        <ion-grid>
+                            <ion-row>
+                                <ion-col col-4>
+                                    <ion-button expand="block" class="your-style-class">
+                                        <ion-icon style="text-align:center;  font-size: 24px;" name="thumbs-up-outline"></ion-icon>
+                                    </ion-button>
+                                </ion-col>
+                                <ion-col col-4>
+                                    <ion-button expand="block" class="your-style-class">
+                                        <ion-icon style="text-align:center;  font-size: 24px;" name="thumbs-down-outline"></ion-icon>
+                                    </ion-button>
+                                </ion-col>
+                                <ion-col col-4>
+                                    <ion-button expand="block" class="your-style-class">
+                                        <ion-icon style="text-align:center;  font-size: 24px;" name="play-outline"></ion-icon>
+                                    </ion-button>
+                                </ion-col>
+                            </ion-row>
+                        </ion-grid>
+                    </ion-card>
+
+
+                    <ion-card style="height:30%;">
+                        <ion-card-content>
+                            <img src='https://www.xing.com/assets/frontend_minified/img/users/nobody_m.1024x1024.jpg' />
+                            <ion-card-title style="text-align:center;  font-size: 18px;">Camilo</ion-card-title>
+                        </ion-card-content>
+                    </ion-card>
+
+
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+</ion-content>
